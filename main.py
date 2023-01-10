@@ -12,7 +12,7 @@ def search_pic(localdir):
 
 
 def upload_pic(q, file_name):
-    base_url = "ro96u7hjz.hd-bkt.clouddn.com"
+    base_url = "your base url"
     bucket_name = 'your bucket name'
     key = datetime.now().strftime("%Y%m%d%H%M%S%f") + "." + file_name.split(".")[-1]
     token = q.upload_token(bucket_name, key, 3600)
